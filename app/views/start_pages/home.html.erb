@@ -1,15 +1,11 @@
 <%provide(:title, "Home")%>
-<!DOCTYPE html>
-<html>
-<head>
-  <title><%=yield(:title)%> | MindMe collaboration</title>
-</head>
-<body>
+
+<div class="center jumbotron">
 <h1>Welcome </h1>
-<p>
+<h2>
   This is the home page for the
   <a href="www.mind-me.de/">MindMe</a>
   collaboration application.
-</p>
-</body>
-</html>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</h2>
+</div>
