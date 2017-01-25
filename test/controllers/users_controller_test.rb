@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserControllerTest < ActionDispatch::IntegrationTest
+class UsersControllerTest < ActionDispatch::IntegrationTest
   def setup
     @baste_title= " | MindMe collaboration"
   end
@@ -10,7 +10,5 @@ class UserControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Sign up#{@baste_title}"
   end
-
-
 
 end
